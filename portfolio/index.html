@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Btech CSE</p>
+                <h1>Hi, I'm <span>Sparsh</span><br>Agarwal From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="sparsh.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Dedicated B.Tech CSE student at BIT Mesra with a passion for exploring the dynamic world of
+                        computer science. Currently navigating through the third semester, eager to enhance my skills
+                        in programming, problem-solving, and emerging technologies. Excited about the opportunities to
+                        learn, grow, and contribute to the tech industry. Open to collaborations and networking with
+                        like-minded professionals and enthusiasts.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>Microsoft Office</span><br>Microsoft Word, Excell, PowerPoint</li>
+                            <li><span>Database Developer</span><br>(Python and MySQL) & (C Language)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June 2024 - July 2024</span><br>Web Development Internship at CodSoft</li>
+                            <li><span>June 2024 - August 2024</span><br>Internship in Remote Sensing at BISR</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 '</span><br>Schooling from Chinar Public School</li>
+                            <li><span>2027 '</span><br>Btech from Birla Institute of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>NSS Volunteer</h2>
+                    <p>As an NSS volunteer at BIT Mesra, I actively participate in the National Service Scheme, a
+                        government initiative aimed at developing a sense of social responsibility among students.
+                        Through community service and various outreach programs, I contribute to societal welfare,
+                        promote education, and work towards sustainable development.</p>
+                </div>
+                <div>
+                    <h2>Event Management</h2>
+                    <p>As an event manager at BIT Mesra, I organized and coordinated various college events, including
+                        cultural festivals, technical workshops, and academic seminars. My responsibilities included
+                        planning, logistics, budgeting, and overseeing execution to ensure smooth and successful events.
+                        This role enhanced my leadership, organizational, and teamwork skills.</p>
+                </div>
+                <div>
+                    <h2>Summer Internship</h2>
+                    <p>I completed a summer internship in web development with CodSoft, where I gained hands-on
+                        experience in creating and optimizing websites using HTML, CSS, and JavaScript. Additionally, I
+                        interned at BISR in remote sensing, focusing on data analysis and interpretation using GIS
+                        software, which enhanced my technical skills in spatial data management and environmental
+                        monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Amazon.png">
+                    <div class="layer">
+                        <h3>Amazon-Clone</h3>
+                        <p>Creating a front-end clone of Amazon involves using HTML for structure and CSS for styling to
+                            replicate the e-commerce site's look and feel. Microsoft Visual Studio serves as the
+                            development environment, providing tools for efficient coding. Version control is managed
+                            with Git, and the project is hosted on GitHub for collaboration and deployment. This process
+                            enables developers to create a responsive and visually accurate clone, honing their web
+                            development skills in the process.
+                        </p>
+                        <a href="https://sparshag7102.github.io/Amazon-Clone/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="iCoder.png">
+                    <div class="layer">
+                        <h3>iCoderBootstrap</h3>
+                        <p>I have created the iCoder website, a comprehensive resource platform for coders,
+                            using Bootstrap. This project showcases my ability to leverage Bootstrap's powerful
+                            framework to develop a responsive, user-friendly, and visually appealing website.
+                        </p>
+                        <a href="https://sparshag7102.github.io/iCoderBootstrap/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="mini apps.png">
+                    <div class="layer">
+                        <h3>Mini Apps</h3>
+                        <p>I have developed a mini app website that includes a variety of applications: a Tic Tac Toe
+                            game, a Rock Paper Scissors game, a currency converter, and a calculator. Each app offers a
+                            simple, user-friendly interface for entertainment and utility.</p>
+                        <a href="https://sparshag7102.github.io/mini-apps/all%20apps/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Back to Top</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>agsparsh.2005@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8824488910</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100030344800551&mibextid=kFxxJD">
+                            <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Sparshag7102">
+                            <i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sparshagarwal365/">
+                            <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sparsh-agarwal-19710a2a2">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="cv.jpg" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sparsh. Made with <i class="fa-solid fa-heart"></i> by Sparsh Agarwal</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzoVHENnNioN6byLM8LRbzjUfqE2q4JU8lEzNov-xC4sdoU28ahVYCYd3XAFBPqk1x9WQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
